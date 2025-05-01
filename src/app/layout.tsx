@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit , Ovo } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 
 
@@ -15,7 +17,7 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Badhon Rani",
   description: "A portfolio website showcasing my work and skills.",
 };
 
@@ -29,9 +31,12 @@ export default function RootLayout({
       <body
         className={`${outfit.className} ${ovo.className} antialiased`}
       >
+        <Navbar/>
         {
           children
         }
+
+        <Footer/>
           
       </body>
     </html>

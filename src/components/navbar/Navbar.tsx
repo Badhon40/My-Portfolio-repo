@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import { useState } from "react";
+import { Github, Linkedin } from 'lucide-react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Projects", href: "/#project" },
     { name: "Skills", href: "/#skills" },
-    { name: "About", href: "/#about" },
+    { name: "About me", href: "/#about" },
     { name: "Contact", href: "/#contact" },
   ];
 
@@ -47,15 +48,14 @@ const Navbar = () => {
           </div>
 
           {/* Right: Download button */}
-          <div className="">
-            <a
-              href="/cv.pdf"
-              download
-              className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition font-medium"
-            >
-              My Resume
-            </a>
-          </div>
+         <div className="flex gap-4">
+         <a href="https://github.com/Badhon40" target="_blank" rel="noopener noreferrer">
+                <Github className="text-white w-8 h-8" />
+              </a>
+          <a href="https://www.linkedin.com/in/badhon-rani-468250306/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="text-white w-8 h-8" />
+                </a>
+         </div>
         
         </div>
 

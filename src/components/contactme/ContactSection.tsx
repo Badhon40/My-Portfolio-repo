@@ -5,7 +5,7 @@ import { Mail, PhoneCall } from 'lucide-react';
 export default function ContactSection() {
   return (
     <section id="contact" className="px-4 py-20 flex justify-center">
-      <div className="w-full max-w-5xl bg-white rounded-2xl shadow-xl p-10">
+      <div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl p-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
           <span className="text-orange-500">Have a question?</span> Just ask!
         </h2>

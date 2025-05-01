@@ -51,28 +51,3 @@ export const projects = [
   },
 ];
 
-
-export const skillCategories = [
-  {
-    title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind"]
-  },
-  {
-    title: "Backend",
-    skills: ["Node.js", "Express", "MongoDB"]
-  },
-  {
-    title: "Tools & Auth",
-    skills: ["Firebase", "GitHub", "NextAuth"]
-  },
-  {
-    title: "Framework",
-    skills: ["Next.js"]
-  }
-];
-
-export const allSkills = [
-  "HTML", "CSS", "JavaScript", "React", "Tailwind",
-  "MongoDB", "Firebase", "Next.js", "NextAuth",
-  "Express", "GitHub"
-];
