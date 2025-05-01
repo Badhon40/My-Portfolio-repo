@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md shadow-md">
+    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md h-20">
       <div className="max-w-7xl mx-auto py-4">
         <div className="flex justify-between items-center h-16 px-4">
         <div className="flex items-center gap-2">
@@ -56,8 +56,6 @@ const Navbar = () => {
               My Resume
             </a>
           </div>
-
-          {/* Hamburger (mobile) */}
         
         </div>
 
