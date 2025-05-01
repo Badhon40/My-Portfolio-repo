@@ -30,7 +30,7 @@ const Banner = () => {
                 <div className='flex justify-center relative my-20 z-10'>
                     <div className='flex flex-col items-center justify-center text-center'>    
                             <h2 className='uppercase px-1 text-2xl md:text-4xl lg:text-5xl text-center text-blue-100 font-bold mb-4 leading-snug'>
-                            Hi, I am Badhon Rani <br /> a passionate web developer</h2>
+                            Hi, I am <span className='text-orange-600'>Badhon Rani</span> <br /> a passionate web developer</h2>
 
                                 <TextGenerateEffect className='text-center text-2xl md:text-4xl text-blue-100 font-bold mb-4'
                                 filter={false} duration={0.5}

@@ -7,11 +7,11 @@ const Navbar = () => {
   const [active, setActive] = useState('#home');
 
   const links = [
-    { name: "Home", href: "#home" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "Projects", href: "/#project" },
+    { name: "Skills", href: "/#skills" },
+    { name: "About", href: "/#about" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (

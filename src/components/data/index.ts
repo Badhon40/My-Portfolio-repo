@@ -1,65 +1,78 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Web Analytics Dashboard",
+    description:
+      "An advanced dashboard for visualizing and analyzing real-time website traffic data using charts and APIs.",
+    tags: ["JavaScript", "React", "Sass", "Html"],
+    image: "/images/web-analytics.jpg",
+    liveLink: "https://web-analytics.vercel.app",
+    githubLink: "https://github.com/yourusername/web-analytics",
+  },
+  {
+    id: 2,
+    title: "Facebook Analytics",
+    description:
+      "AI-powered system to analyze Facebook user engagement and ad performance using intelligent graphs.",
+    tags: ["JavaScript", "React", "Sass", "Html"],
+    image: "/images/facebook-ai.jpg",
+    liveLink: "https://facebook-analytics.vercel.app",
+    githubLink: "https://github.com/yourusername/facebook-analytics",
+  },
+  {
+    id: 3,
+    title: "Google Analytics for SEO",
+    description:
+      "Custom SEO dashboard for monitoring keywords, traffic sources, and SERP performance in real time.",
+    tags: ["JavaScript", "React", "Sass", "Html"],
+    image: "/images/seo-dashboard.jpg",
+    liveLink: "https://seo-analytics.vercel.app",
+    githubLink: "https://github.com/yourusername/seo-analytics",
+  },
+  {
+    id: 4,
+    title: "E-Commerce Admin Panel",
+    description:
+      "Modern admin panel for managing products, orders, and user analytics with responsive UI and charts.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "MongoDB"],
+    image: "/images/ecommerce-admin.jpg",
+    liveLink: "https://ecommerce-admin.vercel.app",
+    githubLink: "https://github.com/yourusername/ecommerce-admin",
+  },
+  {
+    id: 5,
+    title: "Portfolio Website",
+    description:
+      "Personal portfolio website built with animations, project showcases, and dark/light theme toggle.",
+    tags: ["Next.js", "Framer Motion", "TailwindCSS", "ShadCN"],
+    image: "/images/portfolio.jpg",
+    liveLink: "https://yourportfolio.vercel.app",
+    githubLink: "https://github.com/yourusername/portfolio-site",
+  },
+];
 
 
-export const gridItems =  [
-    {
-      id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
-      img: "/b1.svg",
-      spareImg: "",
-    },
-    {
-      id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-    },
-  
-    {
-      id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-    },
-    {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
-    },
-  ];
+export const skillCategories = [
+  {
+    title: "Frontend",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind"]
+  },
+  {
+    title: "Backend",
+    skills: ["Node.js", "Express", "MongoDB"]
+  },
+  {
+    title: "Tools & Auth",
+    skills: ["Firebase", "GitHub", "NextAuth"]
+  },
+  {
+    title: "Framework",
+    skills: ["Next.js"]
+  }
+];
+
+export const allSkills = [
+  "HTML", "CSS", "JavaScript", "React", "Tailwind",
+  "MongoDB", "Firebase", "Next.js", "NextAuth",
+  "Express", "GitHub"
+];
