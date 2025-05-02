@@ -31,12 +31,13 @@ export default function RootLayout({
       <body
         className={`${outfit.className} ${ovo.className} antialiased`}
       >
-        <Navbar/>
-        {
-          children
-        }
-
-        <Footer/>
+        <div className="flex flex-col min-h-screen bg-[#000319]">
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
           
       </body>
     </html>

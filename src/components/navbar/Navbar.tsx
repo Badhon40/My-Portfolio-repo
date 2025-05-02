@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState('/');
+  const [active, setActive] = useState('/'); // Default active link
   const pathname = usePathname();
 
   useEffect(() => {
@@ -41,13 +41,13 @@ const Navbar = () => {
           </div>
 
           {/* Center: Desktop Nav Links */}
-          <div className="hidden lg:flex text-white items-center gap-6 bg-white/10 px-6 py-2 rounded-full shadow-inner backdrop-blur-md">
+          <div className="hidden lg:flex text-white items-center gap-6 bg-gray-300 px-6 py-2 rounded-full shadow-inner backdrop-blur-md">
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setActive(link.href)}
-                className={`font-medium transition-all duration-300 ease-in-out ${
+                className={`font-medium text-lg transition-all duration-300 ease-in-out ${
                   active === link.href ? 'bg-purple-800 px-3 py-1 rounded-full' : 'text-white'
                 }`}
               >

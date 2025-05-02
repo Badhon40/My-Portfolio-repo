@@ -22,7 +22,7 @@ interface Project {
 const ProjectDetailCard = ({ project }: { project: Project }) => {
 
   return (
-    <section className=" text-white  py-12">
+    <section className=" text-white py-12">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 mt-20 bg-gray-900 p-6 rounded-lg shadow-lg">
         {/* Left Side: Image */}
         <div className="flex-shrink-0 w-full lg:w-1/3">
