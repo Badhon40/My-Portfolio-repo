@@ -1,14 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
 import { ExternalLink, Github } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 export interface ProjectCardProps {
   title: string;
   tags: string[];
   description: string;
-  img: string;
+  img: string | StaticImageData;
   liveLink?: string;
   githubLink?: string;
+  serverLink?: string;
 }
 
 export function ProjectCard({
@@ -18,31 +19,22 @@ export function ProjectCard({
   img,
   liveLink,
   githubLink,
+  serverLink,
 }: ProjectCardProps) {
   return (
-    <div className="bg-gradient-to-br from-white/5 to-white/10 p-4 rounded-2xl relative group overflow-hidden shadow-md backdrop-blur-lg hover:shadow-xl transition">
+    <div className="bg-gradient-to-br from-white/5 to-white/10 p-4 rounded-2xl relative group overflow-hidden shadow-md hover:shadow-xl transition">
       {/* Image */}
       <div className="relative overflow-hidden rounded-xl h-52 mb-4">
-        <img
+        <Image
           src={img}
-          alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+          alt={`Screenshot of ${title} project`}
+          fill
+          className="object-cover group-hover:scale-105 transition duration-300"
         />
-       
-        {liveLink && (
-          <Link
-            href={liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition"
-          >
-           
-          </Link>
-        )}
       </div>
 
       {/* Tags */}
-      <div className="flex flex-wrap  gap-2 mb-2">
+      <div className="flex flex-wrap gap-2 mb-2">
         {tags.map((tag, idx) => (
           <span
             key={idx}
@@ -64,7 +56,7 @@ export function ProjectCard({
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-1 text-sm bg-purple-600 hover:bg-purple-700 text-white rounded-full  flex items-center gap-1  transition"
+            className="px-3 py-1 text-sm bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center gap-1 transition"
           >
             Live <ExternalLink className="w-4 h-4" />
           </Link>
@@ -78,6 +70,17 @@ export function ProjectCard({
           >
             <Github className="w-4 h-4" />
             GitHub
+          </Link>
+        )}
+        {serverLink && (
+          <Link
+            href={serverLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-1 text-sm bg-gray-800 hover:bg-gray-900 text-white rounded-full flex items-center gap-1 transition"
+          >
+            <Github className="w-4 h-4" />
+            Server Link
           </Link>
         )}
       </div>

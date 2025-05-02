@@ -26,6 +26,7 @@ const ProjectSection = () => {
                     img={project.image}
                     liveLink={project.liveLink}
                     githubLink={project.githubLink}
+                    serverLink={project.serverLink}
                 />
                 ))} 
              </div>  
