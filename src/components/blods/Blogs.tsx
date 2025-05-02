@@ -23,8 +23,11 @@ const RecentBlogs = () => {
   }, []);
 
   return (
-    <section id="blogs" className="py-10 px-6  text-gray-900 dark:text-white bg-gradient-to-br from-white via-slate-100 to-white dark:from-[#0f172a] dark:via-[#0c0c1d] dark:to-[#0f172a]">
-      <h2 className="text-4xl font-extrabold mb-10 text-center">Recent Tech Blogs</h2>
+    <section id="blogs" className="py-10 px-6 text-white">
+      <h2 className="text-4xl font-extrabold mb-5 text-center">Recent Tech Blogs</h2>
+      <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+        I love sharing my knowledge and experiences through writing. Here are some of my recent blogs.
+      </p>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {blogs.map((blog) => (
           <a

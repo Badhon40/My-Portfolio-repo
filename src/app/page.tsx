@@ -2,7 +2,6 @@ import AboutMe from "@/components/aboutme/AboutMe";
 import Banner from "@/components/banner/Banner";
 import RecentBlogs from "@/components/blods/Blogs";
 import ContactSection from "@/components/contactme/ContactSection";
-import MyApproch from "@/components/myApproch/MyApproch";
 import ProjectSection from "@/components/projects/ProjectSection";
 import SkillCategory from "@/components/skillcategory/SkillCategory";
 
@@ -21,7 +20,6 @@ export default function MainHome() {
         <ProjectSection />
         <SkillCategory />
         <AboutMe  />
-        <MyApproch/>
         <RecentBlogs />
         <ContactSection />
       </div>

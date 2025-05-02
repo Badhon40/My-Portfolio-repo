@@ -41,13 +41,13 @@ const Navbar = () => {
           </div>
 
           {/* Center: Desktop Nav Links */}
-          <div className="hidden lg:flex text-white items-center gap-6 bg-gray-300 px-6 py-2 rounded-full shadow-inner backdrop-blur-md">
+          <div className="hidden lg:flex text-white items-center gap-6 bg-white/10 px-6 py-2 rounded-full shadow-inner backdrop-blur-md">
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setActive(link.href)}
-                className={`font-medium text-lg transition-all duration-300 ease-in-out ${
+                className={`font-medium transition-all duration-300 ease-in-out ${
                   active === link.href ? 'bg-purple-800 px-3 py-1 rounded-full' : 'text-white'
                 }`}
               >
@@ -70,7 +70,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {open && (
             <div
-              className={`fixed top-20 left-0 z-40 lg:hidden flex flex-col gap-4 py-6 px-6 w-[80%] h-[calc(100vh-5rem)] bg-white/10 shadow-lg text-white transform transition duration-300 ease-in-out ${
+              className={`fixed top-20 left-0 z-40 lg:hidden flex flex-col gap-4 py-6 px-6 w-[80%] h-[calc(100vh-5rem)] bg-black/40 shadow-lg text-white transform transition duration-300 ease-in-out ${
                 open ? 'translate-x-0 opacity-100 pointer-events-auto' : '-translate-x-full opacity-0 pointer-events-none'
               }`}
             >
@@ -82,9 +82,9 @@ const Navbar = () => {
                     setActive(link.href);
                     setOpen(false); // Close menu on click
                   }}
-                  className={`font-medium transition-all duration-300 ${
+                  className={`font-medium  transition-all duration-300 ${
                     active === link.href
-                      ? 'bg-purple-800 text-white px-3 py-1 rounded-full'
+                      ? 'bg-purple-800 text-white text-md px-3 py-1 rounded-full'
                       : 'text-white'
                   }`}
                 >
