@@ -1,38 +1,33 @@
-// src/app/projects/[id]/page.tsx
-
 import { projects } from "@/components/data";
 import ProjectDetailCard from "@/components/projects/ProjectDetailCard";
 
-import { notFound } from "next/navigation";
 
 interface PageProps {
-  params: {
+  params : Promise<{
     id: string;
-  };
+  }>;
 }
 
-// ✅ This function must be `async`, even if you're not using await inside
-export default async function ProjectPage({ params }: PageProps) {
-  // ✅ Convert the route param to number
-  const id = Number(params.id);
+const ProjectDetailPage =async ({ params }: PageProps) => {
 
-  // ✅ Find the project from static data
-  const project = projects.find((p) => p.id === id);
+  const PId = await params;
+  
 
-  // ✅ If not found, trigger 404
+  const projectId =PId?.id ? parseInt(PId.id) : NaN;; // Convert the id to a number
+  const project = projects.find((project) => project.id == projectId);
+
   if (!project) {
-    notFound();
+    return <div>Project not found</div>;
   }
 
   return (
-    <section className="w-full bg-[#000319]">
-      
-      <div className="p-8 max-w-7xl mx-auto">
-        
-        <ProjectDetailCard project={project} />
-      
-      </div>
-      
+    <section className="text-white px-4 py-12 bg-[#000319] ">
+      <ProjectDetailCard project={project} />
     </section>
-  );
+  );  
+
+
+
 }
+
+export default ProjectDetailPage;
