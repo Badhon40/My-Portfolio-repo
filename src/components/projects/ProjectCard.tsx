@@ -1,6 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+
+
 
 export interface ProjectCardProps {
   title: string;
@@ -26,9 +27,11 @@ export function ProjectCard({
       {/* Image */}
       <div className="relative overflow-hidden rounded-xl h-52 mb-4">
         <Image
+          width={500}
+          height={300}
+          priority={true}
           src={img}
           alt={`Screenshot of ${title} project`}
-          fill
           className="object-cover group-hover:scale-105 transition duration-300"
         />
       </div>
@@ -47,22 +50,24 @@ export function ProjectCard({
 
       {/* Title and Description */}
       <h3 className="text-lg font-semibold text-white mb-1">{title}</h3>
-      <p className="text-sm text-gray-300 mb-3">{description}</p>
-
+      <p className="text-sm text-gray-300 mb-3">{description}
+      
+      </p>
+      
       {/* Buttons */}
       <div className="flex gap-2 mt-auto">
         {liveLink && (
-          <Link
+          <a
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 py-1 text-sm bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center gap-1 transition"
           >
             Live <ExternalLink className="w-4 h-4" />
-          </Link>
+          </a>
         )}
         {githubLink && (
-          <Link
+          <a
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -70,10 +75,10 @@ export function ProjectCard({
           >
             <Github className="w-4 h-4" />
             GitHub
-          </Link>
+          </a>
         )}
         {serverLink && (
-          <Link
+          <a
             href={serverLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -81,7 +86,7 @@ export function ProjectCard({
           >
             <Github className="w-4 h-4" />
             Server Link
-          </Link>
+          </a>
         )}
       </div>
     </div>
