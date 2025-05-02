@@ -23,7 +23,7 @@ const RecentBlogs = () => {
   }, []);
 
   return (
-    <section className="py-10 px-6  text-gray-900 dark:text-white bg-gradient-to-br from-white via-slate-100 to-white dark:from-[#0f172a] dark:via-[#0c0c1d] dark:to-[#0f172a]">
+    <section id="blogs" className="py-10 px-6  text-gray-900 dark:text-white bg-gradient-to-br from-white via-slate-100 to-white dark:from-[#0f172a] dark:via-[#0c0c1d] dark:to-[#0f172a]">
       <h2 className="text-4xl font-extrabold mb-10 text-center">Recent Tech Blogs</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {blogs.map((blog) => (
