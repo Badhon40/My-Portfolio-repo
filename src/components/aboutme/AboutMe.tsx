@@ -16,7 +16,7 @@ const AboutMe = () => {
           {/* Text Section */}
           <div className="lg:w-1/2 space-y-6">
             <p className="text-lg leading-relaxed">
-              I'm a passionate undergraduate student at{' '}
+              I am a passionate undergraduate student at{' '}
               <strong>Begum Rokeya University, Rangpur</strong>, focusing on MERN development and
               modern UI/UX design. I enjoy turning ideas into interactive and functional digital
               experiences using technologies like <strong>React</strong>, <strong>Next.js</strong>,{' '}
