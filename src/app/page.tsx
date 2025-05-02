@@ -1,5 +1,6 @@
 import AboutMe from "@/components/aboutme/AboutMe";
 import Banner from "@/components/banner/Banner";
+import RecentBlogs from "@/components/blods/Blogs";
 import ContactSection from "@/components/contactme/ContactSection";
 import MyApproch from "@/components/myApproch/MyApproch";
 import ProjectSection from "@/components/projects/ProjectSection";
@@ -21,6 +22,7 @@ export default function MainHome() {
         <SkillCategory />
         <AboutMe  />
         <MyApproch/>
+        <RecentBlogs />
         <ContactSection />
       </div>
       </main>

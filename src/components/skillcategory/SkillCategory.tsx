@@ -11,12 +11,12 @@ const SkillCategory = () => {
                     I have a diverse skill set that includes frontend and backend development, as well as proficiency in various programming languages and tools. I am always eager to learn new technologies and improve my skills.
                 </p>
             <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">
                    {
                     SkillsInfo.map((category, index) => (
                         <div key={index} className="mb-10">
                             
-                            <div className="bg-gradient-to-br from-white/5 to-white/10 p-6 rounded-lg shadow-md min-h-90">
+                            <div className="py-5 px-6 text-gray-900 dark:text-white bg-gradient-to-br from-white via-slate-100 to-white dark:from-[#0f172a] dark:via-[#0c0c1d] dark:to-[#0f172a] rounded-lg shadow-md min-h-96">
                             <h3 className="text-2xl font-semibold text-center text-white mb-4">{category.title}</h3>
                             <div className="flex flex-wrap gap-4">
                                 {category.skills.map((skill, index) => (
