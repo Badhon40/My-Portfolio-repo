@@ -24,26 +24,29 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md h-20">
+    <nav className="fixed top-0 left-0 z-50 w-full bg-transparent backdrop-blur-md h-20">
       <div className="max-w-7xl mx-auto py-4">
         <div className="flex justify-between items-center h-16 px-4">
+          {/* Left: Logo & Hamburger */}
           <div className="flex items-center gap-4">
-            <button className="lg:hidden text-white text-xl" onClick={() => setOpen(!open)}>
+            <button
+              className="lg:hidden text-white text-3xl"
+              onClick={() => setOpen(!open)}
+            >
               ☰
             </button>
-            {/* Left: Logo */}
             <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold">
               BADHON<span className="text-orange-500">RANI</span>
             </h1>
           </div>
 
-          {/* Center: Nav links with pill-style background */}
+          {/* Center: Desktop Nav Links */}
           <div className="hidden lg:flex text-white items-center gap-6 bg-white/10 px-6 py-2 rounded-full shadow-inner backdrop-blur-md">
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                onClick={() => setActive(link.href)} // Update active on click
+                onClick={() => setActive(link.href)}
                 className={`font-medium transition-all duration-300 ease-in-out ${
                   active === link.href ? 'bg-purple-800 px-3 py-1 rounded-full' : 'text-white'
                 }`}
@@ -64,28 +67,32 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile menu */}
-        <div
-          className={`lg:hidden flex flex-col gap-4 py-4 px-6 mt-2 w-[80%] h-screen bg-white/10 bg-opacity-30 shadow-lg text-white transform duration-300 ease-in-out ${
-            open ? 'translate-x-0 opacity-100 pointer-events-auto' : '-translate-x-100 opacity-0 pointer-events-none'
-          }`}
-        >
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              onClick={() => {
-                setActive(link.href); // Update active on click
-                setOpen(false); // Optionally close the mobile menu
-              }}
-              className={`font-medium transition-all duration-300 ${
-                active === link.href ? 'bg-purple-800 text-white px-3 py-1 rounded-full' : 'text-white'
+        {/* Mobile Menu */}
+        {open && (
+            <div
+              className={`fixed top-20 left-0 z-40 lg:hidden flex flex-col gap-4 py-6 px-6 w-[80%] h-[calc(100vh-5rem)] bg-white/10 shadow-lg text-white transform transition duration-300 ease-in-out ${
+                open ? 'translate-x-0 opacity-100 pointer-events-auto' : '-translate-x-full opacity-0 pointer-events-none'
               }`}
             >
-              {link.name}
-            </Link>
-          ))}
-        </div>
+              {links.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => {
+                    setActive(link.href);
+                    setOpen(false); // Close menu on click
+                  }}
+                  className={`font-medium transition-all duration-300 ${
+                    active === link.href
+                      ? 'bg-purple-800 text-white px-3 py-1 rounded-full'
+                      : 'text-white'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+)}
       </div>
     </nav>
   );

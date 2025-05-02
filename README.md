@@ -6,8 +6,8 @@ A personal portfolio website built with **Next.js**, **TypeScript**, and **Tailw
 
 ## 🌐 Live Site
 
-🔗 [Visit Portfolio](https://your-portfolio.vercel.app)  
-*(Replace with your actual Vercel link)*
+🔗 [Visit Portfolio] (https://my-portfolio-8p6ya8w4h-badhon-ranis-projects.vercel.app)
+
 
 ---
 

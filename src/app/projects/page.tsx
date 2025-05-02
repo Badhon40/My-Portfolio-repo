@@ -15,21 +15,24 @@ const AllProjects = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Link key={project.id} href={`/projects/${project.id}`}>
-              <div className="bg-[#111827] hover:bg-[#1f2937] min-h-96 transition rounded-xl overflow-hidden shadow-lg cursor-pointer group">
+            <Link
+              key={project.id}
+              href={`/projects/${project.id}`}
+              className="block"
+            >
+              <div className="bg-[#111827] hover:bg-[#1f2937] min-h-96 transition rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                    width={200}
-                    height={200}
-                    priority={true}
+                  width={400}
+                  height={240}
+                  priority
                   src={project.image.src}
                   alt={project.title}
-                  className="w-full h-46 group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="p-5">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-gray-400 text-sm mb-4 line-clamp-3">
                     {project.description}
-                    
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, idx) => (

@@ -20,5 +20,9 @@
   }
 }
 
-
+@layer components {
+  .animate-spotlight {
+    animation: var(--animate-spotlight);
+  }
+}
 
