@@ -37,7 +37,7 @@ const Banner = () => {
                             </p>
                              <div className="mt-5">
                             <a
-                            href="/cv.pdf"
+                            href="/my_resume.pdf"
                             download
                             className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition font-medium"
                             >

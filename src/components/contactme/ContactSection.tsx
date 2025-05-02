@@ -105,7 +105,7 @@ export default function ContactSection() {
               type="submit"
               className="mt-4 md:mt-0 px-6 py-3 rounded-md bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-semibold shadow hover:opacity-90 transition"
             >
-              Submit Now
+              Send Now
             </button>
           </div>
         </form>

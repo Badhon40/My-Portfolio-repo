@@ -1,5 +1,6 @@
 import { ProjectCard } from "./ProjectCard";
 import { projects } from "../data";
+import Link from "next/link";
 
 
 
@@ -13,11 +14,8 @@ const ProjectSection = () => {
           <p className="text-gray-400 mb-8 max-w-7xl  text-center">
             Their versatility allows them to navigate through different components, databases, servers, APIs, and more.
           </p>
-          
-      
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {projects.map((project) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projects.slice(0,3).map((project) => (
                 <ProjectCard
                     key={project.id}
                     title={project.title}
@@ -32,6 +30,11 @@ const ProjectSection = () => {
              </div>  
            
           </div>
+            <div className="flex justify-center mt-8">
+            <Link href="/projects" className="px-4 py-1 text-lg bg-purple-600 hover:bg-purple-700 text-white rounded-full items-center gap-1 transition">
+            See all
+            </Link>
+            </div>
         
       </section>
 

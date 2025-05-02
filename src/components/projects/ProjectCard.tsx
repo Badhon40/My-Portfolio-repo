@@ -22,7 +22,7 @@ export function ProjectCard({
   serverLink,
 }: ProjectCardProps) {
   return (
-    <div className="bg-gradient-to-br from-white/5 to-white/10 p-4 rounded-2xl relative group overflow-hidden shadow-md hover:shadow-xl transition">
+    <div className="min-h-[40vh] bg-gradient-to-br from-white/5 to-white/10 p-4 rounded-2xl relative group overflow-hidden shadow-md hover:shadow-xl transition">
       {/* Image */}
       <div className="relative overflow-hidden rounded-xl h-52 mb-4">
         <Image
