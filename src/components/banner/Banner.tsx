@@ -19,8 +19,7 @@ const Banner = () => {
                     className={cn(
                     "absolute inset-0",
                     "[background-size:100px_100px]",
-                    "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-                    "dark:[background-image:linear-gradient(to_right,#111827_1px,transparent_1px),linear-gradient(to_bottom,#111827_1px,transparent_1px)]",
+                    "[background-image:linear-gradient(to_right,#111828_0.5px,transparent_0.5px),linear-gradient(to_bottom,#111827_0.5px,transparent_0.5px)]",
                     )}
                 />
      

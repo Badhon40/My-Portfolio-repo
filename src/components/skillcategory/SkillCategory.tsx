@@ -16,7 +16,7 @@ const SkillCategory = () => {
                     SkillsInfo.map((category, index) => (
                         <div key={index} className="mb-10">
                             
-                            <div className="py-5 px-6 text-gray-900 dark:text-white bg-gradient-to-br from-white via-slate-100 to-white dark:from-[#0f172a] dark:via-[#0c0c1d] dark:to-[#0f172a] rounded-lg shadow-md min-h-96">
+                            <div className="py-5 px-6 text-white bg-gradient-to-br  from-[#0f172a] via-[#0c0c1d] dto-[#0f172a] rounded-lg shadow-md min-h-96">
                             <h3 className="text-2xl font-semibold text-center text-white mb-4">{category.title}</h3>
                             <div className="flex flex-wrap gap-4">
                                 {category.skills.map((skill, index) => (

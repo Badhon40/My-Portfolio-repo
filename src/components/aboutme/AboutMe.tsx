@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <section
       id="aboutme"
-      className="py-20 mb-10 px-6 text-gray-900 dark:text-white bg-gradient-to-br from-white via-slate-100 to-white dark:from-[#0f172a] dark:via-[#0c0c1d] dark:to-[#0f172a]"
+      className="py-20 mb-10 px-6 text-white bg-gradient-to-br from-[#0f172a] via-[#0c0c1d] to-[#0f172a]"
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-extrabold mb-10 text-center">About Me</h2>
