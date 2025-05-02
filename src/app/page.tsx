@@ -17,7 +17,7 @@ export default function MainHome() {
          <div className="max-w-7xl w-full mx-auto">
         <Banner />
         <ProjectSection />
-        <SkillCategory title="My Skills" skills={["JavaScript", "React", "TypeScript"]} />
+        <SkillCategory />
         <MyApproch/>
         <ContactSection />
       </div>

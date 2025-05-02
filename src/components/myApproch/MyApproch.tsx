@@ -11,7 +11,7 @@ const MyApproach = () => {
       <h2 className="text-4xl font-bold mb-4 text-white text-center">
         My Working Approach
       </h2>
-      <p className="text-gray-400 mb-8 max-w-5xl text-center">
+      <p className="text-gray-400 mb-8 max-w-4xl text-center">
         I believe in a collaborative approach, where I work closely with clients to
         understand their needs and deliver tailored solutions. My process involves
         thorough research, wireframing, and iterative design to ensure the final
