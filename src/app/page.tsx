@@ -1,3 +1,4 @@
+import AboutMe from "@/components/aboutme/AboutMe";
 import Banner from "@/components/banner/Banner";
 import ContactSection from "@/components/contactme/ContactSection";
 import MyApproch from "@/components/myApproch/MyApproch";
@@ -18,6 +19,7 @@ export default function MainHome() {
         <Banner />
         <ProjectSection />
         <SkillCategory />
+        <AboutMe  />
         <MyApproch/>
         <ContactSection />
       </div>

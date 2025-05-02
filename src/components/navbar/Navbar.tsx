@@ -9,17 +9,17 @@ const Navbar = () => {
 
   const links = [
     { name: "Home", href: "/" },
-    { name: "Projects", href: "/#project" },
-    { name: "Skills", href: "/#skills" },
-    { name: "About me", href: "/#about" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Projects", href: "#project" },
+    { name: "Skills", href: "#skills" },
+    { name: "About me", href: "#aboutme" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md h-20">
       <div className="max-w-7xl mx-auto py-4">
         <div className="flex justify-between items-center h-16 px-4">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
         <button className="lg:hidden text-white text-xl" onClick={() => setOpen(!open)}>
             ☰
           </button>
@@ -60,7 +60,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <div className={`lg:hidden flex flex-col gap-4 py-4 px-6 mt-2 w-[80%] h-screen bg-white/20 bg-opacity-30 shadow-lg text-white transform duration-300 ease-in-out ${
+        <div className={`lg:hidden flex flex-col gap-4 py-4 px-6 mt-2 w-[80%] h-screen bg-white/10 bg-opacity-30 shadow-lg text-white transform duration-300 ease-in-out ${
                     open ? 'translate-x-0 opacity-100 pointer-events-auto' : '-translate-x-100 opacity-0 pointer-events-none'}`}>
                 {links.map((link) => (
                     <Link
