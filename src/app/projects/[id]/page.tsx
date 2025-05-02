@@ -1,5 +1,6 @@
 import { projects } from "@/components/data";
 import ProjectDetailCard from "@/components/projects/ProjectDetailCard";
+import Link from "next/link";
 
 
 interface PageProps {
@@ -23,6 +24,13 @@ const ProjectDetailPage =async ({ params }: PageProps) => {
   return (
     <section className="text-white px-4 py-12 bg-[#000319] ">
       <ProjectDetailCard project={project} />
+
+      <div className="flex justify-center">
+        <Link href="/projects" className="bg-purple-600 rounded-full px-4 py-2 text-center">
+          Back to Projects
+          
+          </Link>
+      </div>
     </section>
   );  
 

@@ -63,7 +63,7 @@ const ProjectDetailCard = ({ project }: { project: Project }) => {
             ))}
           </div>
 
-          <div className="flex gap-4 mt-4">
+          <div className="flex flex-wrap gap-4 mt-4">
             <a href={project.liveLink} target="_blank" className="px-3 py-1 text-sm md:text-lg bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center gap-1 transition">
                 Live Site <ExternalLink className="w-4 h-4" />
             </a>
