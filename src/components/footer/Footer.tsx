@@ -1,6 +1,7 @@
 import { Mail, Phone, Github, Linkedin, Facebook } from 'lucide-react';
 import Link from 'next/link';
 
+
 export default function Footer() {
   return (
         <footer className="bg-gray-950 text-gray-300 py-10 px-6 w-full">
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
           {/* Branding */}
           <div>
-            <h2 className="text-white text-xl font-bold mb-2">Badhon.dev</h2>
+            <h2 className="text-white text-xl font-bold mb-2">Badhon Rani</h2>
             <p className="text-sm">
               Crafting clean, modern and interactive web experiences. Passionate about frontend, full-stack, and UI design.
             </p>
@@ -19,9 +20,11 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-2">Quick Links</h3>
             <ul className="space-y-1 text-sm">
               <li><Link href="/"><span className="hover:underline">Home</span></Link></li>
-              <li><Link href="#about"><span className="hover:underline">About</span></Link></li>
-              <li><Link href="#projects"><span className="hover:underline">Projects</span></Link></li>
-              <li><Link href="#contact"><span className="hover:underline">Contact</span></Link></li>
+              <li><Link href={"/#project"}><span className="hover:underline">Projects</span></Link></li>
+              <li><Link href={"/#skills"}><span className="hover:underline">Skills</span></Link></li>
+              <li><Link href={"/#aboutme"}><span className="hover:underline">About</span></Link></li>
+              <li><Link href={"/#blogs"}><span className="hover:underline">Blogs</span></Link></li>
+              <li><Link href={"/#contact"}><span className="hover:underline">Contact</span></Link></li>
             </ul>
           </div>
 
@@ -30,7 +33,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-2">Contact</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4" /> badhonraniroy@gmail.com.dev
+                <Mail className="w-4 h-4" /> badhonraniroy@gmail.com
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" /> (+880)1876638846
