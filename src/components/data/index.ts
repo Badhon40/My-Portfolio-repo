@@ -1,7 +1,6 @@
 import realstate from "../../assets/realstate.png"
 import artandcraft from "../../assets/artandcraft.png"
 import bookvibe from "../../assets/bookVibe.png"
-import retro from "../../assets/retro.png"
 import bookshop from "../../assets/bookShop.png"
 import tutorlink from "../../assets/tutorlink.png"
 
@@ -13,10 +12,10 @@ export const projects = [
       "A group project. A book store where users can search, review, and purchase books. Admin can manage books through a dashboard.",
     tags: ["React", "Redux", "Shadcn", "TailwindCss", "React Router", "react-icons", "Mongodb", "Express", "nodejs"],
     image: bookshop,
-    liveLink: "https://book-shop-frontend-vert.vercel.app/",
-    githubLink: "https://github.com/bdshakhawat/book-shop-frontend",
-    serverLink: "https://github.com/bdshakhawat/book-shop-backend",
-    deployment: "Vercel (frontend), Render (backend)",
+    liveLink: "https://book-shop-frontend-weld-tau.vercel.app",
+    githubLink: "https://github.com/Badhon40/My-book-shop-frontend-3.git",
+    serverLink: "https://book-shop-backend-rho.vercel.app",
+    deployment: "Vercel (frontend), Vercel (backend)",
     features: [
       "User authentication & protected routes",
       "Search and filter books",
@@ -34,9 +33,9 @@ export const projects = [
       "A group project for connecting tutors and students with features like authentication, dashboard, and secure payments.",
     tags: ["React", "NextJs", "Redux", "Shadcn", "TailwindCss", "React Router", "react-icons", "Mongodb", "Express", "nodejs"],
     image: tutorlink,
-    liveLink: "https://tutor-link-two.vercel.app/",
-    githubLink: "https://github.com/Mdsoyaib123/tutor-link-frontend",
-    serverLink: "https://github.com/Mdsoyaib123/tutor-link-backend",
+    liveLink: "https://new-tutor-link-frontend.vercel.app",
+    githubLink: "https://github.com/Badhon40/New-tutor-link-frontend.git",
+    serverLink: "https://github.com/Badhon40/New-tutor-link-backend.git",
     deployment: "Vercel (frontend), Render (backend)",
     features: [
       "Student and tutor dashboards",
@@ -109,24 +108,5 @@ export const projects = [
     workingProcedure:
       "Users can browse property listings with images and details. Admins or agents can list properties after authentication."
   },
-  {
-    id: 6,
-    title: "Retro",
-    description:
-      "A retro-style website where users can book books with basic JavaScript functionality.",
-    tags: ["JavaScript", "TailwindCss", "DaisyUi", "Html"],
-    image: retro,
-    liveLink: "https://real-state-web-6fb12.web.app", // Replace with actual link if wrong
-    githubLink: "https://github.com/Badhon40/Real-State-repo.git", // Replace if incorrect
-    deployment: "Firebase Hosting",
-    features: [
-      "Pure HTML/CSS/JavaScript",
-      "Basic cart booking feature",
-      "Retro UI design",
-      "Form validation",
-      "Responsive layout"
-    ],
-    workingProcedure:
-      "Users can interact with the UI to select and book books. JavaScript handles the form validation and cart logic without frameworks."
-  }
+  
 ];
