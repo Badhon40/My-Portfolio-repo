@@ -9,6 +9,9 @@ A personal portfolio website built with **Next.js**, **TypeScript**, and **Tailw
 🔗 [Visit Portfolio] (https://my-portfolio-8p6ya8w4h-badhon-ranis-projects.vercel.app)
 
 
+![image](https://github.com/Badhon40/My-Portfolio-repo/blob/64425ae33f329819a60e0e952054410cb8b5feb6/Screenshot%202025-05-10%20012639.png)
+
+
 ---
 
 ## ✨ Features
@@ -51,3 +54,9 @@ npm run dev
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+```
+Future Vision:
+
+Cunrrently this portfolio page is static , but i will make a server to handle new updates without editing the main code.
