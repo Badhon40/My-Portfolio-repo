@@ -3,6 +3,7 @@
 import React from 'react';
 import { Spotlight } from '../ui/Spotlight';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 
 const Banner = () => {
@@ -35,13 +36,13 @@ const Banner = () => {
                             I am a passionate MERN developer with a love for clean code, intuitive design, and seamless user experiences. I specialize in building modern web interfaces using React, Next.js, and Tailwind CSS. I enjoy turning ideas into real-world, performant, and accessible products. I am always eager to learn and grow in this ever-evolving field.
                             </p>
                              <div className="mt-5">
-                            <a
-                            href="/my_resume.pdf"
+                            <Link
+                            href={"https://drive.google.com/file/d/1Fz811Nh-SygqFOjd4m07K90Y8pKQQbnR/view?usp=sharing"}
                             download
                             className="bg-purple-800 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition font-medium"
                             >
-                            Download CV
-                            </a>
+                            My resumee
+                            </Link>
                         </div>
                                
                     </div>

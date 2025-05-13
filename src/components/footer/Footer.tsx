@@ -48,7 +48,7 @@ export default function Footer() {
               <a href="https://github.com/Badhon40" target="_blank" rel="noopener noreferrer">
                 <Github className="hover:text-white w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/badhon-rani-468250306/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/badhonrani" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="hover:text-white w-5 h-5" />
               </a>
               <a href="https://www.facebook.com/home.php" target="_blank" rel="noopener noreferrer">

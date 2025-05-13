@@ -1,7 +1,7 @@
 import realstate from "../../assets/realstate.png"
 import artandcraft from "../../assets/artandcraft.png"
 import bookvibe from "../../assets/bookVibe.png"
-import bookshop from "../../assets/bookShop.png"
+import bookshop from "../../assets/bookshop.png"
 import tutorlink from "../../assets/tutorlink.png"
 
 export const projects = [
@@ -36,7 +36,7 @@ export const projects = [
     liveLink: "https://new-tutor-link-frontend.vercel.app",
     githubLink: "https://github.com/Badhon40/New-tutor-link-frontend.git",
     serverLink: "https://github.com/Badhon40/New-tutor-link-backend.git",
-    deployment: "Vercel (frontend), Render (backend)",
+    deployment: "Vercel (frontend), Vercel (backend)",
     features: [
       "Student and tutor dashboards",
       "Add and manage tutoring courses",
