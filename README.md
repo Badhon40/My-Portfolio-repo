@@ -6,10 +6,10 @@ A personal portfolio website built with **Next.js**, **TypeScript**, and **Tailw
 
 ## 🌐 Live Site
 
-🔗 [Visit Portfolio] (https://my-portfolio-8p6ya8w4h-badhon-ranis-projects.vercel.app)
+🔗 [Visit Portfolio](https://my-portfolio-blush-two-91.vercel.app)
 
 
-![image](https://github.com/Badhon40/My-Portfolio-repo/blob/64425ae33f329819a60e0e952054410cb8b5feb6/Screenshot%202025-05-10%20012639.png)
+![image](https://github.com/Badhon40/My-Portfolio-repo/blob/9bda083dbc27d6ea1cf302ea129199aa0c9e8e59/Screenshot%202025-05-23%20073009.png)
 
 
 ---
