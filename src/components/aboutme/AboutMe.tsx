@@ -10,7 +10,7 @@ const AboutMe = () => {
       className="py-20 mb-10 px-6 text-white bg-gradient-to-br from-[#0f172a] via-[#0c0c1d] to-[#0f172a]"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold mb-10 text-center">About Me</h2>
+        <h2 className="text-4xl font-extrabold mb-10 text-center">Achivement & Certification</h2>
 
         <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
           {/* Text Section */}
