@@ -57,7 +57,7 @@ const Education = () => {
           variants={slideInLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           📘 Educational Background
         </motion.h2>
@@ -71,14 +71,14 @@ const Education = () => {
               variants={slideInLeft}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
             >
               <motion.div
                 className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2.5 border-2 border-gray-900"
                 variants={bounceIn}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
               />
               <h3 className="text-xl font-semibold text-white">{edu.title}</h3>
               <p className="text-gray-300">{edu.institution}</p>
