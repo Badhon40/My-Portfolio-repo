@@ -53,7 +53,7 @@ const Education = () => {
     >
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="text-3xl font-bold text-centertext-white mb-12"
+          className="text-3xl font-bold text-center text-white mb-12"
           variants={bounceIn}
           initial="hidden"
           whileInView="visible"
