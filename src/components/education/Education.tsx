@@ -53,7 +53,7 @@ const Education = () => {
     >
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12"
+          className="text-3xl font-bold text-centertext-white mb-12"
           variants={bounceIn}
           initial="hidden"
           whileInView="visible"
@@ -62,7 +62,7 @@ const Education = () => {
           📘 Educational Background
         </motion.h2>
 
-        <div className="relative border-l border-gray-300 dark:border-gray-600">
+        <div className="relative border-lborder-gray-600">
           {educationData.map((edu, index) => (
             <motion.div
               key={index}
@@ -74,23 +74,23 @@ const Education = () => {
               viewport={{ once: false, amount: 0.3 }}
             >
               <motion.div
-                className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2.5 border-2 border-white dark:border-gray-900"
+                className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2.5 border-2 border-gray-900"
                 variants={bounceIn}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.3 }}
               />
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{edu.title}</h3>
-              <p className="text-gray-700 dark:text-gray-300">{edu.institution}</p>
-              <p className="text-gray-500 dark:text-gray-400 text-sm">{edu.duration}</p>
+              <h3 className="text-xl font-semibold text-white">{edu.title}</h3>
+              <p className="text-gray-300">{edu.institution}</p>
+              <p className="text-gray-400 text-sm">{edu.duration}</p>
               {edu.cgpa && (
-                <p className="text-gray-700 dark:text-gray-300 mt-1">🎯 {edu.cgpa}</p>
+                <p className="text-gray-400 mt-1">🎯 {edu.cgpa}</p>
               )}
               {edu.result && (
-                <p className="text-gray-700 dark:text-gray-300 mt-1">🎯 {edu.result}</p>
+                <p className="text-gray-400 mt-1">🎯 {edu.result}</p>
               )}
               {edu.group && (
-                <p className="text-gray-700 dark:text-gray-300 mt-1">📘 Group: {edu.group}</p>
+                <p className="text-gray-400 mt-1">📘 Group: {edu.group}</p>
               )}
               {edu.courses && (
                 <p className="mt-2 text-gray-700 dark:text-gray-300">
