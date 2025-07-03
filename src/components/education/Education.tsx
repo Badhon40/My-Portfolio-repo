@@ -49,7 +49,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="scroll-mt-24 bg-white dark:bg-gray-900 py-16 px-4 sm:px-6 lg:px-8"
+      className="scroll-mt-24 bg-gray-900 py-16 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-4xl mx-auto">
         <motion.h2
