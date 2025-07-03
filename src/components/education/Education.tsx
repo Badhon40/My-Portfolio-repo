@@ -49,12 +49,12 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="scroll-mt-24 bg-gray-900 py-16 px-4 sm:px-6 lg:px-8"
+      className="scroll-mt-24 py-16 px-4 mb-8 sm:px-6 lg:px-8"
     >
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="text-3xl font-bold text-center text-white mb-12"
-          variants={bounceIn}
+          className="text-4xl font-bold text-center text-white mb-12"
+          variants={slideInLeft}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
@@ -62,11 +62,11 @@ const Education = () => {
           📘 Educational Background
         </motion.h2>
 
-        <div className="relative border-lborder-gray-600">
+        <div className="relative border-l border-gray-600">
           {educationData.map((edu, index) => (
             <motion.div
               key={index}
-              className="mb-10 ml-6"
+              className="mb-10 ml-6 "
               custom={index}
               variants={slideInLeft}
               initial="hidden"
