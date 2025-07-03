@@ -1,6 +1,6 @@
 import AboutMe from "@/components/aboutme/AboutMe";
 import Banner from "@/components/banner/Banner";
-import RecentBlogs from "@/components/blods/Blogs";
+// import RecentBlogs from "@/components/blods/Blogs";
 import ContactSection from "@/components/contactme/ContactSection";
 import Education from "@/components/education/Education";
 import ProjectSection from "@/components/projects/ProjectSection";
@@ -22,7 +22,7 @@ export default function MainHome() {
         <SkillCategory />
         <Education />
         <AboutMe  />
-        <RecentBlogs />
+        {/* <RecentBlogs /> */}
         <ContactSection />
       </div>
       </main>
